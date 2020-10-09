@@ -1,4 +1,4 @@
-![Braze Logo](https://github.com/Appboy/appboy-unity-sdk/blob/master/braze-logo.png)
+![Braze Logo](https://github.com/micheleberardi/braze-python/blob/main/images/braze-logo.png)
 
 # BRAZE PYTHON
 
