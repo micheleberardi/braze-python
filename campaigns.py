@@ -18,15 +18,13 @@ def campaigns_details(token, campaign_id):
     post = requests.get(endpoint,headers=header)
     return post.json()
 
-def braze(token):
-    header = {"Authorization": "Bearer " + str(token)}
-    endpoint = "https://rest.iad-03.braze.com/sends/data_series?campaign_id="+campaign_id+"&send_id=3456789&length=30&ending_at=2014-12-10T23:59:59-05:00"
-    post = requests.get(endpoint,headers=header)
-    return post.json()
+
 
 if __name__ == '__main__':
+    
     token = '111111111-2222-3333-4444-22222222'
     campaign_id = 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeee'
+    
     data_series = data_series(token,campaign_id)        #### https://www.braze.com/docs/api/endpoints/export/campaigns/get_campaign_analytics/
     details = campaigns_details(token, campaign_id)     #### https://www.braze.com/docs/api/endpoints/export/campaigns/get_campaign_details/
     list = campaigns_list(token)                        #### https://www.braze.com/docs/api/endpoints/export/campaigns/get_campaigns/
