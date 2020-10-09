@@ -1,3 +1,5 @@
+![Braze Logo](https://github.com/Appboy/appboy-unity-sdk/blob/master/braze-logo.png)
+
 # BRAZE PYTHON
 
 # Endpoints
